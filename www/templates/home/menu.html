@@ -1,0 +1,40 @@
+<ion-view ng-app="starter" ng-controller="AppCtrl">
+  <ion-side-menus enable-menu-with-back-views="true">
+    <ion-side-menu-content>
+      <ion-nav-bar class="bar-positive">
+        <ion-nav-buttons side="left">
+          <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+          </button>
+        </ion-nav-buttons>
+      </ion-nav-bar>
+      <ion-nav-view name="menuContent"></ion-nav-view>
+    </ion-side-menu-content>
+    <ion-side-menu side="left">
+      <ion-header-bar class="bar-positive">
+        <h1 class="title">Menu</h1>
+      </ion-header-bar>
+      <ion-content>
+        <ion-list>
+          <ion-item class="mybars icon icon-left ion-home" menu-close>
+            <a href="#app/home" style="text-decoration: none" class="menuItem">Home</a>
+          </ion-item>
+          <ion-item class="mybars icon icon-left ion-happy" menu-close>
+            <a href="#app/test1" style="text-decoration: none" class="menuItem">Test 1</a>
+          </ion-item>
+          <ion-item class="mybars icon icon-left ion-happy" menu-close>
+            <a href="#app/test2" style="text-decoration: none" class="menuItem">Test 2</a>
+          </ion-item>
+          <ion-item class="mybars icon icon-left ion-happy" menu-close>
+            <a href="#app/camera" style="text-decoration: none" class="menuItem">Camera</a>
+          </ion-item>
+          <ion-item class="mybars icon icon-left ion-ios-people" menu-close>
+            <a href="#app/audio" style="text-decoration: none" class="menuItem">Audio</a>
+          </ion-item>
+          <ion-item class="mybars icon icon-left ion-paper-airplane" menu-close>
+            <a href="#app/Export" style="text-decoration: none" class="menuItem">Export</a>
+          </ion-item>
+        </ion-list>
+      </ion-content>
+    </ion-side-menu>
+  </ion-side-menus>
+</ion-view>
