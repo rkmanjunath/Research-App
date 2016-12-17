@@ -1,0 +1,5 @@
+QuestionA|How much time have you visited the store?|TYPE_TEXT
+QuestionB|Have you visited the store more than once in the past week?|TYPE_YES_NO
+QuestionC|Do you drive to the store ?|TYPE_YES_NO
+QuestionD|Do you like to shop after work?|TYPE_YES_NO
+QuestionE|What type of shoppind do you like?|TYPE_TEXT

@@ -1,0 +1,5 @@
+QuestionA|What is your favorite restaurant?|TYPE_TEXT
+QuestionB|How often do you visit restaurants?|TYPE_CHOICE
+QuestionC|Do you have a favorite restaurant?|TYPE_YES_NO
+QuestionD|Do you live in San Francisco?|TYPE_YES_NO_DEP
+QuestionE|What is your favorite place in San Francisco|TYPE_TEXT
