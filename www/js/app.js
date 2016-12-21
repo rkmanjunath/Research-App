@@ -51,28 +51,20 @@ angular.module('starter', ['ionic','starter.services','common.controllers','ngCo
       views: {
         'menuContent': {
           templateUrl: 'templates/home/testID.html',
-          controller: 'test1Ctrl'
+          controller: 'testIDCtrl'
         }
       }
     })
-    .state('app.test1', {
-      url: '/test1',
+    .state('app.tests', {
+      url: '/tests',
       views: {
         'menuContent': {
-          templateUrl: 'templates/test1/test1.html',
-          controller:'test1Ctrl'
+          templateUrl: 'templates/tests/tests.html',
+          controller:'testsCtrl'
         }
       }
     })
-    .state('app.test2', {
-      url: '/test2',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/test2/test2.html',
-          controller:'test2Ctrl'
-        }
-      }
-    })
+
     .state('app.audio', {
       url: '/audio',
       views: {

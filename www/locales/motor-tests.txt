@@ -1,0 +1,19 @@
+LM01|Stands with support|TYPE_YES_NO
+LM02|Stands without support|TYPE_YES_NO_DEP
+LM03|Can kick a ball from stationary position|TYPE_YES_NO
+LM04|Can kick a moving ball|TYPE_YES_NO_DEP
+LM05|Walks when held with one hand|TYPE_YES_NO
+LM06|Walks without help|TYPE_YES_NO_DEP
+LM07|Jumps with two feet together, holding on to person’s hand|TYPE_YES_NO
+LM08|Jumps with two feet together unsupported both feet leave the ground|TYPE_YES_NO_DEP
+LM09|Stands on one leg, without support for 10 – 20 seconds|TYPE_YES_NO
+LM10|Stands on one leg, without support for 21 seconds+|TYPE_YES_NO_DEP
+LM11|Walk on tip toes for 3 or more steps|TYPE_YES_NO
+LM12|Walk on tip toes for length of mat|TYPE_YES_NO_DEP
+LM13|Walks backwards with support or for less than length of mat|TYPE_YES_NO
+LM14|Walks backwards alone for length of mat|TYPE_YES_NO_DEP
+LM15|Walks along line heel to toe, arms out for 3 steps|TYPE_YES_NO
+LM16|Walks along line heel to toe, arms out for length of mat|TYPE_YES_NO_DEP
+LM17|Walks on side of feet|TYPE_YES_NO
+LM18|Hops on one leg on spot|TYPE_YES_NO
+LM19|Hops on one leg for length of mat|TYPE_YES_NO_DEP

@@ -1,0 +1,5 @@
+PSEDA|How much time in the past one month has the child spent in sickness?|TYPE_TEXT
+PSEDB|Has the respondent been sick at least 2-3 days in the past one month?|TYPE_YES_NO
+PSEDC|Has the child in the past one-month been taken care of by the respondent?|TYPE_YES_NO
+PSEDD|Any significant changes in the child’s environment i.e. moving residence, people around him (death/move/visitors)?|TYPE_YES_NO
+PSEDE|In case of any changes, note whether permanent or temporary in the space adjacent?|TYPE_TEXT
