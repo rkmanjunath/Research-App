@@ -51,7 +51,7 @@ angular.module('starter', ['ionic','starter.services','common.controllers','ngCo
       views: {
         'menuContent': {
           templateUrl: 'templates/home/testID.html',
-          controller: 'test1Ctrl'
+          controller: 'HomeCtrl'
         }
       }
     })

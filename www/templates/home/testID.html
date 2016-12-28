@@ -1,3 +1,12 @@
-<!--Controller QuestionCtrl located in Basic_Information>basic_info.js-->
-<ion-view view-title="Please enter the Study ID">
+<ion-view view-title="Please enter the Test ID">
+  <ion-nav-buttons side="right">
+    <button class="button button-positive icon-right ion-chevron-right" ng-click="changePage()">NEXT PAGE</button>
+  </ion-nav-buttons>
+  <ion-content>
+    <label class="item item-input">
+      <span class="input-label">TestID</span>
+      <input type="text" ng-model="Test.TestID">
+    </label>
+    <button class="button button-block button-positive icon-right ion-checkmark-circled" ng-click="set_testid(Test.TestID);changePage()">SET TEST ID</button>
+  </ion-content>
 </ion-view>
