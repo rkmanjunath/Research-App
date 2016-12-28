@@ -90,6 +90,15 @@ angular.module('starter', ['ionic','starter.services','common.controllers','ngCo
           controller:'cameraCtrl'
         }
       }
+    })
+    .state('app.export', {
+      url: '/export',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/export/export.html',
+          controller:'exportCtrl'
+        }
+      }
     });
 
   // if none of the above states are matched, use this as the fallback
