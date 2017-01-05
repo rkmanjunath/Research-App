@@ -56,12 +56,12 @@ angular.module('starter', ['ionic','starter.services','common.controllers','ngCo
         }
       }
     })
-    .state('app.test1', {
-      url: '/test1',
+    .state('app.questions', {
+      url: '/questions',
       views: {
         'menuContent': {
-          templateUrl: 'templates/test1/test1.html',
-          controller:'test1Ctrl'
+          templateUrl: 'templates/questions/questions.html',
+          controller:'questionsCtrl'
         }
       }
     })

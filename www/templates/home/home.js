@@ -16,13 +16,13 @@ angular.module('starter')
     //  return $scope.Test
     //};
     $scope.changePage = function () {
-      $state.go('app.test1');
+      $state.go('app.questions');
     };
     $scope.start = function () {
       $state.go('app.testID')
     };
     $scope.export = function () {
-      $state.go('app.Export')
+      $state.go('app.export')
     };
 
   });

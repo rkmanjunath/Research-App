@@ -1,7 +1,7 @@
 angular.module('starter')
 
   //.controller("test1Ctrl", function ($scope, $state, BasicInfoService, ionicDatePicker, GeoService) {
-  .controller("test1Ctrl", function ($scope, $state) {
+  .controller("questionsCtrl", function ($scope, $state) {
 
     //$scope.service = StudyService;
     //$scope.Test = {

@@ -7,6 +7,6 @@ angular.module('starter')
     };
 
     $scope.backPage = function () {
-      $state.go('app.test2');
+      $state.go('app.questions');
     };
   });
