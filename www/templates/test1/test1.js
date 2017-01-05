@@ -9,7 +9,7 @@ angular.module('starter')
     //
     //};
     $scope.changePage = function () {
-      $state.go('app.test2');
+      $state.go('app.camera');
     };
 
     $scope.backPage = function () {

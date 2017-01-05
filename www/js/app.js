@@ -65,15 +65,6 @@ angular.module('starter', ['ionic','starter.services','common.controllers','ngCo
         }
       }
     })
-    .state('app.test2', {
-      url: '/test2',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/test2/test2.html',
-          controller:'test2Ctrl'
-        }
-      }
-    })
     .state('app.audio', {
       url: '/audio',
       views: {
