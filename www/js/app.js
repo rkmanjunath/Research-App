@@ -20,6 +20,7 @@ angular.module('starter', ['ionic','starter.services','common.controllers','ngCo
       // org.apache.cordova.statusbar required
       StatusBar.styleDefault();
     }
+     AudioRecorderAPI.install();
   });
 })
 

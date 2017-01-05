@@ -3,4 +3,20 @@
       <button class="button button-positive icon-left ion-chevron-left" ng-click="backPage()">Camera</button>
       <button class="button button-positive icon-right ion-chevron-right" ng-click="changePage()">Export</button>
   </ion-nav-buttons>
+  <ion-content class="happy">
+    <div ng-controller="audioCtrl">
+      <br>
+      <div id='countdown3'></div>
+      <br>
+      <div class="col">
+        <input type=button ng-click="recorder.record('countdown3')" value="Record"/>
+      </div>
+      <div class="col">
+        <input type=button ng-click="recorder.playback()" value="Play"/>
+      </div>
+      <div class="col">
+        <input type=button ng-click="recorder.stop()" value="Stop"/>
+      </div>
+    </div>
+
 </ion-view>
