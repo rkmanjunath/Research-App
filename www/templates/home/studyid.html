@@ -1,0 +1,12 @@
+<ion-view view-title="Please enter the Study ID">
+  <ion-nav-buttons side="right">
+    <button class="button button-positive icon-right ion-chevron-right" ng-click="changePage()">NEXT PAGE</button>
+  </ion-nav-buttons>
+  <ion-content>
+    <label class="item item-input">
+      <span class="input-label">StudyID</span>
+      <input type="text" ng-model="studyID">
+    </label>
+    <button class="button button-block button-positive icon-right ion-checkmark-circled" ng-click="setstudyid(studyID);changePage()">SET STUDY ID</button>
+  </ion-content>
+</ion-view>

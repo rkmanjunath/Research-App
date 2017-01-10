@@ -1,18 +1,14 @@
 angular.module('starter')
 
-  //.controller("test1Ctrl", function ($scope, $state, BasicInfoService, ionicDatePicker, GeoService) {
-  .controller("questionsCtrl", function ($scope, $state) {
+  .controller("questionsCtrl", function ($scope, $state, StudyService) {
 
-    //$scope.service = StudyService;
-    //$scope.Test = {
-    //  TestID: ''
-    //
-    //};
+    $scope.service = StudyService;
+    console.log("StudyService.studyNum is @@@@@@@@" + StudyService.studyNum);
     $scope.changePage = function () {
       $state.go('app.camera');
     };
 
     $scope.backPage = function () {
-      $state.go('app.testID');
+      $state.go('app.studyID');
     };
   });

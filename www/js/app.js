@@ -47,11 +47,11 @@ angular.module('starter', ['ionic','starter.services','common.controllers','ngCo
         }
       }
     })
-    .state('app.testID', {
-      url:'/testID',
+    .state('app.studyID', {
+      url:'/studyID',
       views: {
         'menuContent': {
-          templateUrl: 'templates/home/testID.html',
+          templateUrl: 'templates/home/studyid.html',
           controller: 'HomeCtrl'
         }
       }
@@ -96,4 +96,15 @@ angular.module('starter', ['ionic','starter.services','common.controllers','ngCo
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/home');
 
+})
+
+.run(function($ionicPlatform) {
+  $ionicPlatform.ready(function() {
+    if(window.cordova && window.cordova.plugins.Keyboard) {
+      cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+    }
+    if(window.StatusBar) {
+      StatusBar.styleDefault();
+    }
+  });
 });

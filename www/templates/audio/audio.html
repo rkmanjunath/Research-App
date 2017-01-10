@@ -4,6 +4,7 @@
       <button class="button button-positive icon-right ion-chevron-right" ng-click="changePage()">Export</button>
   </ion-nav-buttons>
   <ion-content class="happy">
+    <ion-item class="studyID">Study ID: {{service.studyNum}}</ion-item>
     <div ng-controller="audioCtrl">
       <br>
       <div id='countdown3'></div>
@@ -18,5 +19,5 @@
         <input type=button ng-click="recorder.stop()" value="Stop"/>
       </div>
     </div>
-
+  </ion-content>
 </ion-view>

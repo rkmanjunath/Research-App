@@ -3,6 +3,12 @@
     <button class="button button-positive icon-left ion-chevron-left" ng-click="backPage()">Questions</button>
     <button class="button button-positive icon-right ion-chevron-right" ng-click="changePage()">Audio</button>
   </ion-nav-buttons>
+  <ion-content class="happy">
+    <ion-item class="studyID">Study ID: {{service.studyNum}}</ion-item>
+    <br>
+    <div class="col">
+      <input type=button ng-click="getPhoto(service.studyNum)" value="Take Photo"/>
+      <img ng-src="{{lastPhoto}}" style="max-width: 100%">
+    </div>
+  </ion-content>
 </ion-view>
-
-

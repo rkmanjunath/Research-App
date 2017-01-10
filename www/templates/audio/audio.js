@@ -1,8 +1,8 @@
 angular.module('starter')
 
-  .controller('audioCtrl', function($scope,$state) {
+  .controller('audioCtrl', function($scope, $state, StudyService) {
 
-    //$scope.service = StudyService;
+    $scope.service = StudyService;
     console.log("in audioCtrl ");
     $scope.playfilepath = "";
     $scope.fullfilepath = "";
@@ -12,7 +12,7 @@ angular.module('starter')
 
     // Wait for device API libraries to load
     document.addEventListener("deviceready", onDeviceReady, false);
-// device APIs are available
+   // device APIs are available
     function onDeviceReady() {
       console.log("in onDeviceReady");
     }
@@ -39,7 +39,7 @@ angular.module('starter')
       if ($scope.recorder.seconds ){
         return;
       }
-      $scope.recorder.seconds = 5;
+      $scope.recorder.seconds = 60;
       $scope.recorder.interval = setInterval(function () {
         var msg = document.getElementById(element);
         //$scope.recorder.msg = '';

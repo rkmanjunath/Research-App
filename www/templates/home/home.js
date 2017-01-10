@@ -4,12 +4,9 @@ angular.module('starter')
   .controller('HomeCtrl', function($scope, $state, StudyService) {
     $scope.service = StudyService;
 
-    $scope.Test = {
-      TestID: ''
-    };
-    $scope.set_testid = function (value) {
-      StudyService.set_testid(value);
-      console.log('In Set Testid : ' + value);
+    $scope.setstudyid = function (value) {
+      StudyService.setstudyid(value);
+      console.log('setstudyid : ' + value);
     };
 
     //$scope.get_testid = function () {
@@ -19,7 +16,7 @@ angular.module('starter')
       $state.go('app.questions');
     };
     $scope.start = function () {
-      $state.go('app.testID')
+      $state.go('app.studyID')
     };
     $scope.export = function () {
       $state.go('app.export')
