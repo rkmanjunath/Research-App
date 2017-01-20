@@ -19,9 +19,20 @@
             <a href="#app/home" style="text-decoration: none" class="menuItem">Home</a>
           </ion-item>
           <ion-item class="mybars icon icon-left ion-happy" menu-close>
-            <a href="#app/questions" style="text-decoration: none" class="menuItem">Questions</a>
-          </ion-item>
-          <ion-item class="mybars icon icon-left ion-happy" menu-close>
+          <a href="#app/questions" style="text-decoration: none" class="menuItem">Questions</a>
+        </ion-item>
+          <label ng-click="toggleMore()">
+            <i ng-class="showMore ? 'icon ion-chevron-down more_icon' : 'icon ion-chevron-right more_icon'"></i>
+          </label>
+          <div ng-show="showMore">
+            <ion-list>
+              <br>
+              <ion-item class="subbars" menu-close ng-repeat="stateUri in stateUris">
+                <a href='{{stateUri.uri}}'>{{stateUri.name}}</a>
+              </ion-item>
+              </ion-list>
+            </div>
+          <ion-item class="mybars icon icon-left ion-ios-people" menu-close>
             <a href="#app/camera" style="text-decoration: none" class="menuItem">Camera</a>
           </ion-item>
           <ion-item class="mybars icon icon-left ion-ios-people" menu-close>

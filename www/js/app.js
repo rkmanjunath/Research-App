@@ -5,9 +5,9 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic','starter.services','common.controllers','ngCordova'])
+var app = angular.module('starter', ['ionic','starter.services','common.controllers','ngCordova']);
 
-.run(function($ionicPlatform) {
+app.run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
@@ -25,7 +25,7 @@ angular.module('starter', ['ionic','starter.services','common.controllers','ngCo
 })
 
 .config(function($stateProvider, $urlRouterProvider) {
-
+  app.stateProvider = $stateProvider;
   // Ionic uses AngularUI Router which uses the concept of states
   // Learn more here: https://github.com/angular-ui/ui-router
   // Set up the various states which the app can be in.
@@ -53,15 +53,6 @@ angular.module('starter', ['ionic','starter.services','common.controllers','ngCo
         'menuContent': {
           templateUrl: 'templates/home/studyid.html',
           controller: 'HomeCtrl'
-        }
-      }
-    })
-    .state('app.questions', {
-      url: '/questions',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/questions/questions.html',
-          controller:'questionsCtrl'
         }
       }
     })

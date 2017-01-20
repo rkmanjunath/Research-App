@@ -178,8 +178,9 @@ table#t01 th	{
 }
 
 .subbars {
-  background-color: #1E88E5;
-  text-align: center;
+  background-color:lightblue;
+  /*color: #c2185b;*/
+  text-align:center;
   font-size: medium;
 }
 
@@ -231,6 +232,10 @@ button{
   text-align: center;
   width: 95%;
   /*height: 40px;*/
+}
+
+.happy {
+  font-size:16pt;
 }
 
 

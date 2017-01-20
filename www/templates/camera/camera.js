@@ -26,6 +26,6 @@ angular.module('starter')
     };
 
     $scope.backPage = function () {
-      $state.go('app.questions');
+      $state.go('app.test2');
     };
   });
